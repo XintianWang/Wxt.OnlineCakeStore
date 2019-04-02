@@ -41,11 +41,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Abstracts\ICustomerRepository.cs" />
+    <Compile Include="Abstracts\IStoreRepository.cs" />
+    <Compile Include="Entities\Cake.cs" />
+    <Compile Include="Entities\Category.cs" />
+    <Compile Include="Entities\Customer.cs" />
+    <Compile Include="Entities\Receipt.cs" />
+    <Compile Include="Entities\ShoppingCart.cs" />
+    <Compile Include="Entities\ShoppingItem.cs" />
+    <Compile Include="Entities\StockItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Abstracts\" />
-    <Folder Include="Entities\" />
     <Folder Include="Repositories\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
