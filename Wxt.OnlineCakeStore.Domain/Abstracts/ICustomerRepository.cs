@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Wxt.OnlineCakeStore.Domain
 {
-    interface ICustomerRepository
+    public interface ICustomerRepository
     {
         List<Customer> Customers { get; }
         List<ShoppingCart> ShoppingCarts { get; }

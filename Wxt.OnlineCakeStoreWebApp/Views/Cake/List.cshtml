@@ -1,0 +1,12 @@
+﻿@using Wxt.OnlineCakeStore.Domain
+@model List<Cake>
+
+@{
+    ViewBag.Title = "List";
+}
+
+@foreach (var cake in Model)
+{
+<h3>@cake.Id<br>@cake.Name<br>@cake.Price</h3>
+}
+

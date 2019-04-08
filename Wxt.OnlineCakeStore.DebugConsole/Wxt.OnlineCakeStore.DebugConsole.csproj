@@ -4,16 +4,16 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{383873CB-2A58-44AE-8BFB-7AF8316BE1E9}</ProjectGuid>
-    <OutputType>Library</OutputType>
-    <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Wxt.OnlineCakeStore.Domain</RootNamespace>
-    <AssemblyName>Wxt.OnlineCakeStore.Domain</AssemblyName>
+    <ProjectGuid>{4576534C-A20B-4CEE-B3C0-F0BC1C246BA9}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Wxt.OnlineCakeStore.DebugConsole</RootNamespace>
+    <AssemblyName>Wxt.OnlineCakeStore.DebugConsole</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <Deterministic>true</Deterministic>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugSymbols>true</DebugSymbols>
     <DebugType>full</DebugType>
     <Optimize>false</Optimize>
@@ -23,6 +23,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
     <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
@@ -48,19 +49,8 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Abstracts\ICustomerRepository.cs" />
-    <Compile Include="Abstracts\IStoreRepository.cs" />
-    <Compile Include="Entities\Cake.cs" />
-    <Compile Include="Entities\Category.cs" />
-    <Compile Include="Entities\Customer.cs" />
-    <Compile Include="Entities\Receipt.cs" />
-    <Compile Include="Entities\ShoppingCart.cs" />
-    <Compile Include="Entities\ShoppingItem.cs" />
-    <Compile Include="Entities\StockItem.cs" />
+    <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-  </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Repositories\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
