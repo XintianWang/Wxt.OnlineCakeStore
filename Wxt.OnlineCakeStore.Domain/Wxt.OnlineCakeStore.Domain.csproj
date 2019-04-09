@@ -60,7 +60,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Repositories\" />
+    <Folder Include="Concret\" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

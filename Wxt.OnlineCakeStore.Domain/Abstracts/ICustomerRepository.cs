@@ -8,8 +8,8 @@ namespace Wxt.OnlineCakeStore.Domain
 {
     public interface ICustomerRepository
     {
-        List<Customer> Customers { get; }
-        List<ShoppingCart> ShoppingCarts { get; }
-        List<Receipt> Receipts { get; }
+        IEnumerable<Customer> Customers { get; }
+        IEnumerable<ShoppingCart> ShoppingCarts { get; }
+        IEnumerable<Receipt> Receipts { get; }
     }
 }

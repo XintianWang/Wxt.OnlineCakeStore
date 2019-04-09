@@ -1,7 +1,10 @@
 ﻿namespace Wxt.OnlineCakeStore.Domain
 {
+    using System.ComponentModel.DataAnnotations;
+
     public class Cake
     {
+        [Key]
         public int Id { get; set; }
 
         public string Name { get; set; }

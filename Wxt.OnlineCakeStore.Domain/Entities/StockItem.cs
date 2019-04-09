@@ -1,13 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Wxt.OnlineCakeStore.Domain
+﻿namespace Wxt.OnlineCakeStore.Domain
 {
+    using System.ComponentModel.DataAnnotations;
+
     public class StockItem
     {
+        [Key]
         public int CakeId { get; set; }
         public int StockNumber { get; set; }
     }

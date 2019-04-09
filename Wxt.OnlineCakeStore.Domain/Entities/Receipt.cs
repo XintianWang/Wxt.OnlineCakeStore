@@ -2,10 +2,12 @@
 {
     using System;
     using System.Collections.Generic;
+    using System.ComponentModel.DataAnnotations;
     using System.Linq;
 
     public class Receipt
     {
+        [Key]
         public int Id { get; set; }
 
         public int CustomerId { get; set; }
