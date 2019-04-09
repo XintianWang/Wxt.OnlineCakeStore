@@ -8,7 +8,9 @@ namespace Wxt.OnlineCakeStore.Domain
 {
     public interface IStoreRepository
     {
+        IEnumerable<Category> Categories { get; }
         IEnumerable<Cake> Cakes { get; }
-        IEnumerable<StockItem> Stocks { get; }
+        IEnumerable<Stock> Stocks { get; }
+        IEnumerable<Receipt> Receipts { get; }
     }
 }

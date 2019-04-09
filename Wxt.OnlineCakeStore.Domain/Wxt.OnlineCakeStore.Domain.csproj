@@ -50,18 +50,18 @@
   <ItemGroup>
     <Compile Include="Abstracts\ICustomerRepository.cs" />
     <Compile Include="Abstracts\IStoreRepository.cs" />
+    <Compile Include="Concret\EFDbContext.cs" />
+    <Compile Include="Concret\EFDbStoreRepository.cs" />
     <Compile Include="Entities\Cake.cs" />
     <Compile Include="Entities\Category.cs" />
     <Compile Include="Entities\Customer.cs" />
     <Compile Include="Entities\Receipt.cs" />
     <Compile Include="Entities\ShoppingCart.cs" />
     <Compile Include="Entities\ShoppingItem.cs" />
-    <Compile Include="Entities\StockItem.cs" />
+    <Compile Include="Entities\Stock.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Concret\" />
-  </ItemGroup>
+  <ItemGroup />
   <ItemGroup>
     <None Include="App.config" />
     <None Include="packages.config" />

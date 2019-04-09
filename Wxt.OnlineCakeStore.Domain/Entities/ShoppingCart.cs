@@ -7,6 +7,6 @@
     {
         [Key]
         public int CustomerId { get; set; }
-        public List<StockItem> Items { get; set; } = new List<StockItem>();
+        public List<Stock> Items { get; set; } = new List<Stock>();
     }
 }

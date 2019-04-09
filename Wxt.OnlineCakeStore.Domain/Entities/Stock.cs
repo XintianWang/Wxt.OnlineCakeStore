@@ -2,7 +2,7 @@
 {
     using System.ComponentModel.DataAnnotations;
 
-    public class StockItem
+    public class Stock
     {
         [Key]
         public int CakeId { get; set; }

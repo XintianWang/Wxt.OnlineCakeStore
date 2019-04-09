@@ -56,5 +56,11 @@
     <None Include="App.config" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Wxt.OnlineCakeStore.Domain\Wxt.OnlineCakeStore.Domain.csproj">
+      <Project>{383873cb-2a58-44ae-8bfb-7af8316be1e9}</Project>
+      <Name>Wxt.OnlineCakeStore.Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

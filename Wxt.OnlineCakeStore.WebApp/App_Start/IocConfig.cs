@@ -7,6 +7,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using Wxt.OnlineCakeStore.Domain;
+using Wxt.OnlineCakeStore.Domain.Concret;
 
 namespace Wxt.OnlineCakeStore.WebApp
 {
@@ -23,15 +24,15 @@ namespace Wxt.OnlineCakeStore.WebApp
             builder.RegisterControllers(AppDomain.CurrentDomain.GetAssemblies()).PropertiesAutowired();
             // Set the dependency resolver to be Autofac.
 
-            Mock<IStoreRepository> mock = new Mock<IStoreRepository>();
-            mock.Setup(m => m.Cakes).Returns(new List<Cake>{
-                new Cake { Name = "Football", Price = 25 },
-                new Cake { Name = "Surf board", Price = 179 },
-                new Cake { Name = "Running shoes", Price = 95 }
-            });
-            builder.RegisterInstance<IStoreRepository>(mock.Object).PropertiesAutowired();
+            //Mock<IStoreRepository> mock = new Mock<IStoreRepository>();
+            //mock.Setup(m => m.Cakes).Returns(new List<Cake>{
+            //    new Cake { Name = "Football", Price = 25 },
+            //    new Cake { Name = "Surf board", Price = 179 },
+            //    new Cake { Name = "Running shoes", Price = 95 }
+            //});
+            //builder.RegisterInstance<IStoreRepository>(mock.Object).PropertiesAutowired();
 
-            //builder.RegisterType<EFProductRepository>().As<IProductsRepository>().PropertiesAutowired();
+            builder.RegisterType<EFDbStoreRepository>().As<IStoreRepository>().PropertiesAutowired();
             var container = builder.Build();
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
         }
